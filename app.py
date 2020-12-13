@@ -4,6 +4,7 @@ import numpy as np
 import pickle
 import pandas as pd
 import streamlit as st
+import sklearn
 from sklearn.ensemble import GradientBoostingRegressor
 
 def main():
@@ -25,7 +26,7 @@ def main():
          ans = model.predict([df])
          st.write(ans)
 
-if __name__== "__main__":
+if __name__ == "__main__":
          main()
 
         
